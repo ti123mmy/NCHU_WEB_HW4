@@ -1,0 +1,389 @@
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Sneaker Head</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
+    <style>
+        body {
+            background-color: #6E6E6E;
+        }
+
+        h2 {
+            color: white;
+            font-size: 33px;
+            font-style: bold;
+        }
+
+        h3 {
+            color: #FAFAFA;
+            font-size: 26px;
+        }
+
+        span {
+            color: #FAFAFA;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        table {
+            border-style: solid;
+            border-width: 3px;
+            border-color: #FF3030;
+            border: 2;
+        }
+
+        th,
+        tr,
+        td {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        ul,
+        li {
+            color: white;
+            font-size: 22px;
+        }
+
+        #mm {
+            float: right;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $('#map').click(function() {
+                $("#boostpic").fadeIn();
+                $("#closeboost").fadeIn();
+            });
+        });
+
+        $(document).ready(function() {
+            $('#closeboost').click(function() {
+                $("#boostpic").fadeOut();
+                $("#closeboost").fadeOut();
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $("#atk").click(function() {
+                $("#formula").slideToggle("slow");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $("#cri").click(function() {
+                $("#criAtk").slideToggle("slow");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $("#shoes").click(function() {
+                $("#nmd").toggle("slow");
+                $("#v2").toggle("slow");
+                $("#ub").toggle("slow");
+                $("#eqt").toggle("slow");
+            });
+        });
+
+        $(document).ready(function() {
+            $("#nmd").click(function() {
+                $("#nmdta").show("slow");
+                $("#closeta").show("slow");
+            });
+        });
+
+        $(document).ready(function() {
+            $("#v2").click(function() {
+                $("#v2ta").show("slow");
+                $("#closeta").show("slow");
+            });
+        });
+
+        $(document).ready(function() {
+            $("#ub").click(function() {
+                $("#ubta").show("slow");
+                $("#closeta").show("slow");
+            });
+        });
+
+        $(document).ready(function() {
+            $("#eqt").click(function() {
+                $("#eqtta").show("slow");
+                $("#closeta").show("slow");
+            });
+        });
+
+        $(document).ready(function() {
+            $("#closeta").click(function() {
+                $("#nmdta").hide("slow");
+                $("#v2ta").hide("slow");
+                $("#ubta").hide("slow");
+                $("#eqtta").hide("slow");
+                $("#closeta").hide("slow");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#rank").click(function() {
+                $("#ooo").slideDown("slow");
+                $("#two").slideDown("slow");
+                $("#three").slideDown("slow");
+                $("#four").slideDown("slow");
+                $("#closerank").slideDown("slow");
+            });
+        });
+
+        $(document).ready(function() {
+            $("#closerank").click(function() {
+                $("#ooo").slideUp("slow");
+                $("#two").slideUp("slow");
+                $("#three").slideUp("slow");
+                $("#four").slideUp("slow");
+                $("#closerank").slideUp("slow");
+            });
+        });
+
+        $(document).ready(function() {
+            $("#ooo").click(function() {
+                $("#ooocon").fadeToggle("slow");
+            });
+        });
+
+        $(document).ready(function() {
+            $("#two").click(function() {
+                $("#twocon").fadeToggle("slow");
+            });
+        });
+
+        $(document).ready(function() {
+            $("#three").click(function() {
+                $("#threecon").fadeToggle("slow");
+            });
+        });
+
+        $(document).ready(function() {
+            $("#four").click(function() {
+                $("#fourcon").fadeToggle("slow");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $("#mm").fadeTo("slow", 0.45);
+        });
+
+        $(document).ready(function() {
+            $("#mm").mouseenter(function() {
+                $(this).fadeTo("slow", 0.9);
+            })
+            $("#mm").mouseleave(function() {
+                $(this).fadeTo("slow", 0.45);
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <h1><a href="../index.html" id="h2">Back to Timmy Liu's Main Page</a></h1>
+    <h1><a href="about.html">About</a></h1>
+    <section id="one">
+        <div align="center">
+            <br><br>
+            <h1 style="color:#FAFAFA;font-size:40px" ;>AN INTRODUCE OF SOME ADIDAS BOOST</h1>
+              <hr style="border:1px dotted #white" />
+        </div>
+        <br>
+        <div align="center">
+            <h2 id="map">---Click here to see what the BOOST look like---</h2>
+              <hr style="border:#white 5px solid;
+                         max-width: 300px;" />
+            <br>
+            <img src="pic1.jpg" style="width:960px;height:480px;display:none;" id="boostpic">
+            <h2 id="closeboost" style="display:none">---Close this image!!---</h2>
+            <hr style="border:#white 5px solid;
+                       max-width: 300px;" />
+            <p style="color:#EDEDED;font-size:20px;font-style: oblique">The Boost sole uses a material called thermoplastic polyurethane (or TPU) to form its bundle tightly packed sole nuggets.<br>
+              Just like the more traditional midsole material, EVA, TPU compresses under pressure for shock absorption<br><br>
+              What’s unique about the adidas tech is the ability to instantly bounce back to its original shape.<br>
+              By moulding together lots of small capsules, they are allowed to ping back into shape quicker and easier than one big slab of sole could.<br>
+              The frisky foam is able to retain these properties despite temperature variation, being almost impervious to the elements,<br>
+              where EVA has been observed to stiffen in the cold.<p>
+        </div>
+        <div align="center">
+            <h2 id="atk">---Best Selling Shoes That Use BOOST---</h2>
+            <hr style="border:#white 5px solid;
+                       max-width: 300px;" />
+            <h3 id="formula" style="display:none">NMD<br>V2 350(By Kanye West)<br>Ultra Boost
+            </h3>
+        </div>
+        <div align="center">
+            <h2 id="cri">The Growing Of Adidas</h2>
+            <hr style="border:#white 5px solid;
+                       max-width: 300px;" />
+            <h3 id="criAtk" style="display:none">
+              The strong growth for Adidas in the 2016 second quarter,<br>
+              which builds on a 21.8% increase a year ago after two years of declines,<br>
+              implies the turnaround story has got some traction.
+            </h3>
+        </div>
+
+        <div align="center">
+            <h2 id="shoes">---Some Of The Shoes That Use BOOST---</h2>
+            <hr style="border:#white 5px solid;
+                       max-width: 300px;" />
+            <span id="nmd" style="display:none">--Adidas NMD--</span>
+            <span id="v2" style="display:none">--Adidas V2 350--</span>
+            <span id="ub" style="display:none">--Adidas Ultra Boost--</span>
+            <span id="eqt" style="display:none">--Adidas EQT Boost--</span>
+            <table id="nmdta" style="display:none">
+                <tr>
+                    <th>Adidas NMD</th>
+                </tr>
+                <tr>
+                    <td>1. ADIDAS NMD XR1 PK Bright Cyan</td>
+                </tr>
+                <tr>
+                    <td>2. Adidas Human Race Tangerine</td>
+                </tr>
+                <tr>
+                    <td>3. ADIDAS NMD "BEDWIN" NAVY</td>
+                </tr>
+                <tr>
+                    <td>4. Adidas NMD Bright Cyan</td>
+                </tr>
+                <tr>
+                    <td>5. ADIDAS NMD R1 BAPE "GREEN CAMO"</td>
+                </tr>
+            </table>
+
+            <table id="v2ta" style="display:none">
+                <tr>
+                    <th></th>
+                    <th>Adidas V2 350</th>
+                </tr>
+                <tr>
+                    <td>1. ADIDAS YEEZY 350 V2 BLACK/COPPER</td>
+                </tr>
+                <tr>
+                    <td>2. ADIDAS YEEZY 350 V2 BRED</td>
+                </tr>
+                <tr>
+                    <td>3. ADIDAS YEEZY BOOST 350 V2 BLACK/RED</td>
+                </tr>
+                <tr>
+                    <td>4. ADIDAS YEEZY BOOST 350 V2 ZEBRA</td>
+                </tr>
+                <tr>
+                    <td>5. ADIDAS YEEZY BOOST 350 V2 BLACK/WHITE</td>
+                </tr>
+            </table>
+
+            <table id="ubta" style="display:none">
+                <tr>
+                    <th>Adidas Ultra Boost</th>
+                </tr>
+                <tr>
+                    <td>1. ADIDAS ULTRA BOOST TEXAS A&M</td>
+                </tr>
+                <tr>
+                    <td>2. Adidas Ultra Boost Olive 1.0</td>
+                </tr>
+                <tr>
+                    <td>3. ADIDAS ULTRA BOOST MID KITH</td>
+                </tr>
+                <tr>
+                    <td>4. ADIDAS ULTRA BOOST "REIGNING CHAMP"</td>
+                </tr>
+                <tr>
+                    <td>5. ADIDAS ULTRA BOOST TRIPLE BLACK 2.0</td>
+                </tr>
+            </table>
+
+            <table id="eqtta" style="display:none">
+                <tr>
+                    <th>Adidas EQT Boost</th>
+                </tr>
+                <tr>
+                    <td>1. ADIDAS EQT SUPPORT BOOST 93-16</td>
+            </table>
+            <h3 id="closeta" style="display:none">---Click here to REMOVE the form!!---</h3>
+            <hr style="border:#white 5px solid;
+                       max-width: 300px;" />
+        </div>
+        <div align="center">
+       <h2 id="rank">---Top 4 Of The Adidas Shoes Recently---</h2>
+       <hr style="border:#white 5px solid;
+                  max-width: 300px;" />
+       <h3 id="ooo" style="display:none"> 1---Adidas Yeezy Boost 750 「Glow in the Dark」<h3>
+     <ul id="ooocon" style="display:none">
+       <li>
+         提起Yeezy，你最先想到的是什麼，應該就是曾經Nike時期最經典的夜光大底<br>
+         但是來到Adidas之後，似乎在刻意的拋去任何Nike時期的經典元素<br>
+         讓人們重新認識Yeezy系列，帶有Boost科技的，更加潮流化的款式<br>
+         但是今年的這雙夜光回歸的版本，似乎讓人們充滿了期待，這才是Yeezy應該有的樣子<br>
+         你會發現明星，網紅，都急於上腳這雙夜光版本的750，這就是為什麼這款鞋子的價格依舊高昂
+       </li>
+     </ul>
+     <h3 id="two" style="display:none">2---Adidas 3D Runner</h3>
+       <ul id="twocon" style="display:none">
+           <li>
+             Adidas的第一 雙3D列印球鞋，僅僅發售了333雙<br>
+             這雙鞋不僅僅代表著一種設計，或者是一種潮流，它代表的是未來的一種趨勢<br>
+             可以按每個人的腳型定製化的趨勢，3D列印的趨勢<br>
+             這就是Adidas獻出的最好的禮物，給未來的鞋子
+           </li>
+       </ul>
+       <h3 id="three" style="display:none">3---Adidas Harden Vol 1</h3>
+       <ul id="threecon" style="display:none">
+           <li>
+             Adidas今年另一次的逆襲來自於籃球鞋的領域，你們有多久沒有如此期待過一雙Adidas的籃球鞋了<br>
+             Boost和James Harden 似乎成為了最好的組合，出現在完美的時刻<br>
+             不再拘泥於傳統的設計風格，Harden似乎要重新建造一個屬於自己的王國<br>
+             大鬍子自從來到火箭當上休斯頓之王，就一直對自己的職業生涯和風格有著自己的規劃<br>
+             而球鞋也是一樣，Adidas大合同簽下Harden就像是一場賭注，沒有人為他設計過球鞋，這場賭注最大的籌碼就是哈登的個人魅力<br>
+             再次運用皮質作為球鞋的材質，不對稱的鞋帶設計，和Boost緩震系統，都讓這款球鞋成為了籃球鞋領域的話題之王<br>
+             有多久沒有新技術可以在球場上馳騁了？有多久沒碰過皮質籃球鞋了？<br>
+             在眾多塑料及編織面料的球鞋旁邊，Harden的這款鞋子似乎多了幾分質感<br>
+             Adidas讓籃球鞋重新回到大眾的視線里，回到球場，更是在試圖慢慢侵占日常的運用<br>
+             一雙曾經那樣可以打球，可以壓馬路的籃球鞋也許就在路上？
+           </li>
+       </ul>
+       <h3 id="four" style="display:none">4---Adidas Yeezy Boost 350 v2</h3>
+       <ul id="fourcon" style="display:none">
+           <li>
+             Yeezy Boost 系列絕對是現在世界上最潮流的鞋款了，無數人依舊在翹首以盼<br>
+             350更是Kanye West 和Adidas打造的殺手鐧，這雙鞋子在世界各地取得了成功<br>
+             初代的版本最近已經停止發售，Adidas將其升級到了V2的版本，在細節地方稍微有一點小的修改<br>
+             最大的區別在於新球鞋的鞋幫更高，上面加入了SPLY350的字樣<br>
+             在產量上，Adidas也加大了V2的生產量<br>
+             這樣的高產量會降低Yeezy系列的炒賣價格，但是也讓更多的人可以有機會入手一雙Yeezy<br>
+             Adidas更是做了一件從未發生在Yeezy系列的發售方式，一次發售了三個配色<br>
+             Kanye曾經保證過每個人都會擁有Yeezy，但是這樣的事情即將成為現實。
+           </li>
+       </ul>
+       <h3 id="closerank" style="display:none">---Click To Hide The Rank!!---</h3>
+       <hr style="border:#white 5px solid;
+                  max-width: 300px;" />
+   </div>
+        <div>
+            <h3 style="text-align:right;">
+              <img src="pic3.png" style="width:150px;height:150px;" id="mm">
+            </h3>
+        </div>
+
+    </section>
+</body>
+
+</html>

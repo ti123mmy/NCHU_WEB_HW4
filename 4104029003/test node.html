@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>測試新增加入Node</title>
+	</head>
+
+	
+	<body>
+	<div id="myDiv">
+	<p  id = "p2" onclick="appendNode()">段落一</p>
+	<p onclick="insertNode()">段落二</p>
+	<p>段落三</p>
+	<input type="button" value="顯示子節點" onclick="printChilds(myDiv);">
+	<input type="button" value="刪除元素1" onclick="deleteChild(myDiv, p2);">
+	</div>
+	
+		<script>
+		function appendNode() {
+		   var objNode = document.getElementById("myDiv");
+		   var strText = "段落四";
+		   var objNewNode = document.createElement("P");
+		   var objTextNode = document.createTextNode(strText);
+		   objNode.appendChild(objNewNode);
+		   objNewNode.appendChild(objTextNode);
+		}
+		
+		function insertNode(objNode, objBrother, strText) {
+		   var objNode = document.getElementById("myDiv");
+		   var objBrother = objNode.children[1];
+		   var strText = '段落一.二';
+		   var objNewNode = document.createElement("P");
+		   var objTextNode = document.createTextNode(strText);
+		   objNode.insertBefore(objNewNode, objBrother);
+		   objNewNode.appendChild(objTextNode);
+		}
+		
+		function printChilds(objNode) {
+		    var strMsg = "節點名稱 =" + objNode.nodeName + "\n";
+		    if (objNode.hasChildNodes()) {
+			var nodeCount = objNode.children.length;
+			strMsg += "子元素數 = " + nodeCount + "\n";
+			for (var i = 0; i < nodeCount; i++)
+			strMsg += "標籤名稱 = " + objNode.children[i].nodeName + "\n";
+			alert(strMsg);
+		   }
+		}
+		
+		function deleteChild(objParent, objNode) {
+		    var strMsg = "刪除標籤 = " + objNode.nodeName + "\n";
+		    strMsg += "刪除標籤的子節點數  = " + objNode.children.length + "\n";
+		    objParent.removeChild(objNode);
+		    alert(strMsg); 
+		}
+
+		</script>
+
+	</body>
+</html>
